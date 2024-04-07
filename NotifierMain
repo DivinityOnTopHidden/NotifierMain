@@ -1,0 +1,59 @@
+local NotifGui = Instance.new("ScreenGui")
+local BackgroundNotif = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local ContainerFrame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Messager = Instance.new("TextLabel")
+local ExtraFrame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+
+NotifGui.Name = "NotifGui"
+NotifGui.Parent = game.CoreGui
+NotifGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+BackgroundNotif.Name = "BackgroundNotif"
+BackgroundNotif.Parent = NotifGui
+BackgroundNotif.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+BackgroundNotif.Position = UDim2.new(0.00439972803, 0, 0.30035755, 0)
+BackgroundNotif.Size = UDim2.new(0, 286, 0, 131)
+BackgroundNotif.Visible = false
+
+UICorner.CornerRadius = UDim.new(0, 12)
+UICorner.Parent = BackgroundNotif
+
+ContainerFrame.Name = "ContainerFrame"
+ContainerFrame.Parent = BackgroundNotif
+ContainerFrame.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+ContainerFrame.Position = UDim2.new(0.0209790207, 0, 0.335877866, 0)
+ContainerFrame.Size = UDim2.new(0, 274, 0, 80)
+
+UICorner_2.CornerRadius = UDim.new(0, 12)
+UICorner_2.Parent = ContainerFrame
+
+Messager.Name = "Messager"
+Messager.Parent = ContainerFrame
+Messager.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Messager.BackgroundTransparency = 1.000
+Messager.Position = UDim2.new(0.0218978096, 0, 0, 0)
+Messager.Size = UDim2.new(0, 262, 0, 79)
+Messager.Font = Enum.Font.Oswald
+Messager.Text = "Text"
+Messager.TextColor3 = Color3.fromRGB(255, 255, 255)
+Messager.TextSize = 24.000
+
+ExtraFrame.Name = "ExtraFrame"
+ExtraFrame.Parent = BackgroundNotif
+ExtraFrame.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+ExtraFrame.BorderSizePixel = 0
+ExtraFrame.Position = UDim2.new(0.0209790207, 0, 0.258823544, 0)
+ExtraFrame.Size = UDim2.new(0, 274, 0, 2)
+
+Title.Name = "Title"
+Title.Parent = BackgroundNotif
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Size = UDim2.new(0, 286, 0, 35)
+Title.Font = Enum.Font.SciFi
+Title.Text = "Vengeful Client"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 20.000
